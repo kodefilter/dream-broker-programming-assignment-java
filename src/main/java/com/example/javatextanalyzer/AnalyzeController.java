@@ -9,8 +9,13 @@ public class AnalyzeController {
 
     @PostMapping("/analyze")
     public Result result(@RequestBody Request request) {
-        long result = request.getText().length();
-        return new Result(result);
+        return new Result(getTextLength(request.getText()));
+    }
+
+    public TextLength getTextLength(String text) {
+        long withSpaces = text.length();
+        long withoutSpaces = text.replaceAll(" ","").length();
+        return new TextLength(withSpaces,withoutSpaces);
     }
 
 

@@ -1,13 +1,13 @@
 package com.example.javatextanalyzer;
 
 public class Result {
-    private long wordCount;
+    private TextLength textLength;
 
-    public Result(long wordCount) {
-        this.wordCount = wordCount;
+    public Result(TextLength textLength) {
+        this.textLength = textLength;
     }
 
-    public long getWordCount() {
-        return wordCount;
+    public TextLength getTextLength() {
+        return textLength;
     }
 }
