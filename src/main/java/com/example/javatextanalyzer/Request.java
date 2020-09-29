@@ -4,9 +4,10 @@ public class Request {
     private String text;
 
     //This is needed for deserializing in request body
-    public Request(){}
+    public Request() {
+    }
 
-    public Request( String text) {
+    public Request(String text) {
         this.text = text;
     }
 

@@ -5,10 +5,10 @@ import java.util.TreeMap;
 
 public class Result {
     private TextLength textLength;
-    private long wordCount;
+    private int wordCount;
     private Object[] characterCount;
 
-    public Result(TextLength textLength, long wordCount, Object[] characterCount) {
+    public Result(TextLength textLength, int wordCount, Object[] characterCount) {
         this.textLength = textLength;
         this.wordCount = wordCount;
         this.characterCount = characterCount;

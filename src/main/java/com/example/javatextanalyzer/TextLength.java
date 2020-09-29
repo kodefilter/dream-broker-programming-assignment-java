@@ -1,10 +1,10 @@
 package com.example.javatextanalyzer;
 
 public class TextLength {
-    private long withSpace;
-    private long withoutSpace;
+    private int withSpace;
+    private int withoutSpace;
 
-    public TextLength( long withSpace, long withoutSpace) {
+    public TextLength(int withSpace, int withoutSpace) {
         this.withSpace = withSpace;
         this.withoutSpace = withoutSpace;
     }
